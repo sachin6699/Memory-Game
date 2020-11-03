@@ -14,7 +14,7 @@ html {
 body {
   max-width: 100%;
   max-height: 100vh;
-  background-color: black;
+  background-color: slategray;
 }
 
 body h1 {
@@ -63,15 +63,11 @@ body main .game .box {
   height: 18vh;
   margin: 1%;
   font-size: 5rem;
-  display: block;
-  background-color: black;
-  border-radius: 16%;
-  -webkit-box-shadow: 0 20px 60px rgba(56, 182, 255, 0.3);
-          box-shadow: 0 20px 60px rgba(56, 182, 255, 0.3);
-  border-bottom: 2px solid #38b6ff;
-  border-top: 4px solid whitesmoke;
-  border-left: 2px solid #38b6ff;
-  border-right: 4px solid whitesmoke;
+  color: black;
+  background-color: whitesmoke;
+  border-radius: 5%;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
   font-weight: 600;
 }
 
