@@ -14,6 +14,7 @@ const cards = document.querySelectorAll(".card");
 
 const turnMemoryCard = (element) => {
   element.classList.toggle('turn');
+  // console.log(element);
 
 };
 cards.forEach(memoryCard => memoryCard.addEventListener("click", () => {
@@ -22,10 +23,10 @@ cards.forEach(memoryCard => memoryCard.addEventListener("click", () => {
 
 // ----------- MATCH CARD -----------------//
 
-const matchCard = () => {
-    if (front.dataset.framework === back.dataset.framework){
+// const matchCard = () => {
+//     if (front.dataset.framework === back.dataset.framework){
         
-    }
+//     }
 
-}
+// }
 
