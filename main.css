@@ -22,7 +22,7 @@ body h1 {
   height: 10vh;
   padding: 2%;
   font-size: 4rem;
-  color: whitesmoke;
+  color: wheat;
   text-align: center;
   font-style: italic;
   text-decoration: underline;
@@ -90,10 +90,8 @@ body main .game .card .front {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: red;
-  z-index: 2;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  background-color: wheat;
+  z-index: 1;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -107,9 +105,43 @@ body main .game .card .back {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   background-color: lightblue;
   -webkit-backface-visibility: visible;
           backface-visibility: visible;
+}
+
+body main .game .card .back.bmw {
+  background-color: blue;
+}
+
+body main .game .card .back.merc {
+  background-color: red;
+}
+
+body main .game .card .back.audi {
+  background-color: yellow;
+}
+
+body main .game .card .back.volvo {
+  background-color: black;
+}
+
+body main .game .card .back.toyota {
+  background-color: purple;
+}
+
+body main .game .card .back.mclaren {
+  background-color: saddlebrown;
+}
+
+body main .game .card .back.bugatti {
+  background-color: pink;
+}
+
+body main .game .card .back.lambo {
+  background-color: green;
 }
 /*# sourceMappingURL=main.css.map */
