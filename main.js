@@ -7,6 +7,7 @@ let cardTwo = null
 
 const turnMemoryCard = (element) => {
   element.classList.toggle('turn');
+  // console.log(element);
 
 };
 cards.forEach(memoryCard => memoryCard.addEventListener("click", ()  => { // anonymous function 
@@ -30,6 +31,7 @@ cards.forEach(memoryCard => memoryCard.addEventListener("click", ()  => { // ano
           turnMemoryCard(tempCardTwo); //if cardOne === cardTwo run turn function on the temporary copies of cardOne and cardTwo
         },1000); 
 
+<<<<<<< HEAD
         // turnMemoryCard(cardOne);   // when these are called after setting the window timeout
         // turnMemoryCard(cardTwo);   // javascript returns the cards to object NULL before the turnMemoryCardFunction because animation is too slow and javascript works ultra fast basically
         
@@ -88,5 +90,13 @@ cards.forEach(memoryCard => memoryCard.addEventListener("click", ()  => { // ano
 
 
 
+=======
+// const matchCard = () => {
+//     if (front.dataset.framework === back.dataset.framework){
+        
+//     }
+
+// }
+>>>>>>> 5096fbdfee0c9b04cff874853f4474cb21dcfd78
 
   
