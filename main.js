@@ -2,10 +2,10 @@ const cards = document.querySelectorAll(".card");
 let cardOne = null; // these are empty objects which will input values later and compare
 let cardTwo = null;
 
-const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
 
 const changeBackground = () => {
-  document.body.style.backgroundColor = "#" + randomColor;
+  document.body.style.backgroundColor = randomColor;
 };
 
 const bothFunctions = () => {
