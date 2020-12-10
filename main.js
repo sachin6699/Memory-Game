@@ -2,13 +2,17 @@ const cards = document.querySelectorAll(".card");
 let cardOne = null; // these are empty objects which will input values later and compare
 let cardTwo = null;
 
+// let button1 = document.querySelector(".colorButton");
+// let content = document.querySelector(".content");
+
+// button1.addEventListener("click", () => (content.style.color = "red"));
+
 function shuffle() {
   cards.forEach((card) => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
   });
 }
-
 const button = document.querySelector(".btn");
 button.addEventListener("click", shuffle);
 
