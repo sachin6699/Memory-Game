@@ -11,7 +11,6 @@ function shuffle() {
 
 const button = document.querySelector(".btn");
 button.addEventListener("click", shuffle);
-console.log(button);
 
 const turnMemoryCard = (element) => {
   element.classList.toggle("turn");
