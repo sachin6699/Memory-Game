@@ -2,6 +2,17 @@ const cards = document.querySelectorAll(".card");
 let cardOne = null; // these are empty objects which will input values later and compare
 let cardTwo = null;
 
+const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+
+const changeBackground = () => {
+  document.body.style.backgroundColor = "#" + randomColor;
+};
+
+const bothFunctions = () => {
+  shuffle();
+  changeBackground();
+};
+
 // let button1 = document.querySelector(".colorButton");
 // let content = document.querySelector(".content");
 
@@ -14,7 +25,7 @@ function shuffle() {
   });
 }
 const button = document.querySelector(".btn");
-button.addEventListener("click", shuffle);
+button.addEventListener("click", bothFunctions);
 
 const turnMemoryCard = (element) => {
   element.classList.toggle("turn");
